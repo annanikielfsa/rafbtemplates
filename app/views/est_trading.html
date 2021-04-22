@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Operator type - RAFB
+  Establishment trading? - RAFB
 {% endblock %}
 
 {% block beforeContent %}
@@ -19,38 +19,37 @@
 			  <fieldset class="govuk-fieldset">
 				<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
 				  <h1 class="govuk-fieldset__heading">
-					Who operates this business?
+					Is this establishment already trading?
 				  </h1>
 				</legend>
 				
 				<details class="govuk-details" data-module="govuk-details">
 				  <summary class="govuk-details__summary">
 					<span class="govuk-details__summary-text">
-					  What is a food business operator
+					  What is an establishment?
 					</span>
 				  </summary>
 				  <div class="govuk-details__text">
-					The food business operator is the person, charity or company who makes the decisions about the food business, what it serves and how it operates.
+					An establishment is the location of your food business. If it is a mobile food business, please use the location where it is normally stored overnight.
 				  </div>
+
 				</details>
+				
+				<div id="changed-name-hint" class="govuk-hint">
+      It has been trading if it has been producing or serving food at the location since it opened or since the new operator took control. </div>
+				
 				
 				<div class="govuk-radios">
 				  <div class="govuk-radios__item">
-					<input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="person">
+					<input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="yes">
 					<label class="govuk-label govuk-radios__label" for="where-do-you-live">
-					  It is operated by a person
+					  Yes, it is already trading
 					</label>
 				  </div>
 				  <div class="govuk-radios__item">
-					<input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="company">
+					<input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="no">
 					<label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-					  It is operated by a limted company
-					</label>
-				  </div>
-				  <div class="govuk-radios__item">
-					<input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="charity">
-					<label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-					  It is operated by a charity
+					  No, it is not trading yet
 					</label>
 				  </div>
 				</div>
