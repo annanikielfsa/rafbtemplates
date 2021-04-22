@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  RAFB
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+			<div class="govuk-form-group">
+			  <fieldset class="govuk-fieldset">
+				<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+				  <h1 class="govuk-fieldset__heading">
+					Who operates this business?
+				  </h1>
+				</legend>
+				
+				<details class="govuk-details" data-module="govuk-details">
+				  <summary class="govuk-details__summary">
+					<span class="govuk-details__summary-text">
+					  What is a food business operator
+					</span>
+				  </summary>
+				  <div class="govuk-details__text">
+					The food business operator is the person, charity or company who makes the decisions about the food business, what it serves and how it operates.
+				  </div>
+				</details>
+				
+				<div class="govuk-radios">
+				  <div class="govuk-radios__item">
+					<input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="person">
+					<label class="govuk-label govuk-radios__label" for="where-do-you-live">
+					  It is operated by a person
+					</label>
+				  </div>
+				  <div class="govuk-radios__item">
+					<input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="company">
+					<label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+					  It is operated by a limted company
+					</label>
+				  </div>
+				  <div class="govuk-radios__item">
+					<input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="charity">
+					<label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+					  It is operated by a charity
+					</label>
+				  </div>
+				</div>
+
+			  </fieldset>
+			</div>
+
+
+            </div>
+            <div class="grid-row">
+              <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+            </div>
+
+
+          </fieldset>
+          </div>
+      </form>
+
+
+      </div>
+    </div>
+</main>
+
+{% endblock %}
